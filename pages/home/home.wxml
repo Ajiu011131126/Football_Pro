@@ -1,5 +1,5 @@
 <!--pages/home/home.wxml-->
 <text class='title'>hello world</text>
 <button size="mini">按钮</button>
-<view>项目一</view>
-<view>你是谁？</view>
+<view>项目二</view>
+<view>为了谁？</view>
