@@ -1,13 +1,11 @@
-// home.js
-const app = getApp()
-
+// pages/my/my.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    token : app.globalData.token
+
   },
 
   /**

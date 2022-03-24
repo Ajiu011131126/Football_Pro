@@ -1,5 +1,6 @@
 <!--pages/home/home.wxml-->
 <text class='title'>hello world</text>
 <button size="mini">按钮</button>
-<veiw>项目二</veiw>
-<veiw>你几岁了？</veiw>
+<view>{{token}}</view>
+<navigator url='../../pages/my/my'
+           open-type="redirect">我的</navigator>

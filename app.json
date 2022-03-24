@@ -1,6 +1,24 @@
 {
   "pages": [
     "pages/home/home",
-    "pages/about/about"
-  ]
+    "pages/about/about",
+    "pages/my/my"
+  ],
+  "tabBar": {
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "home"
+    
+    },
+    {
+      "pagePath": "pages/about/about",
+      "text": "关于"
+   
+    },
+    {         
+      
+      "pagePath": "pages/my/my",
+      "text": "我的"
+    }]
+  }
 }
