@@ -1,0 +1,20 @@
+/* pages/games/games-friendgame/games-friendgame.wxss */
+.search{
+  color: silver;
+  background-color: whitesmoke;
+  flex: 1;
+}
+.search-container{
+  display: flex;
+}
+
+.section{
+  display: flex;
+}
+.section__title{
+  flex : 1 ;
+}
+.picker{
+  color: rgb(117, 117, 117);
+  border: -5rpx;
+}

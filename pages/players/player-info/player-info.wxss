@@ -1,0 +1,61 @@
+/* pages/players/player-info/player-info.wxss */
+info{
+  flex:1;
+  align-items: center;
+  padding-left: 20rpx;
+  text-align: left;
+  vertical-align: middle;
+  color: darkcyan;
+  padding-top: 40rpx;
+  width: 160rpx;
+}
+.userin{
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+display: flex;
+
+}
+.avatar{
+  padding-left: 30rpx;
+  width: 160rpx;
+  height: 160rpx;
+}
+.infoList{
+
+  align-items: flex-end;
+}
+.infoItem{
+  display: flex;
+
+}
+.infoItems{
+  flex:1;
+  padding-left: 30rpx;
+}
+.infoItems2{
+  flex:1;
+  background-color: rgb(224, 224, 224);
+}
+.sep{
+  width:100%;
+  height: 3rpx;
+  background-color: grey;
+  }
+  .at-con{
+    display: flex;
+
+  }
+  .at-item{
+    flex:1;
+    padding-left: 30rpx;
+  }
+  .it-con{
+    display: flex;
+  }
+  .it-item{
+    flex:1;
+    padding-left: 30rpx;
+  }
+.item{
+  padding-right: 30rpx;
+}

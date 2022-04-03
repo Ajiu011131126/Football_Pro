@@ -1,0 +1,7 @@
+{
+  "usingComponents": {
+    "teamname" : "../teamCpn/teamName/teamName",
+    "my-titletext":"/components/my-titletext/my-titletext",
+    "my-titleitem":"/components/my-titleitem/my-titleitem"
+  }
+}

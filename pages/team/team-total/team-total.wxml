@@ -1,0 +1,30 @@
+<!--pages/team/team-total/team-total.wxml-->
+<view class="page">
+<view class="pagetitle">球队风采</view>
+</view>
+<my-titletext title="我的球队" />
+<my-seperation />
+
+<view wx:for="{{['狼盟联队','光明顶FC']}}" wx:key="{{index}}">
+  <view class="title-home" >
+    <view bindtap="handleTeam1" class="content1-home">{{item}}</view>
+    <view bindtap="handleTeam1" class="content2-home">点击进入>></view>
+  </view>
+  <view class="sep"></view>
+</view>
+
+<my-titletext title="热门球队" />
+<my-seperation />
+<view class="search-container">
+<icon size="20" type="search"></icon>
+<input style="width: 40%;" placeholder-class="search" placeholder="请输入队名" ></input>
+<view class="search">{{friendTeam}}</view>
+</view>
+<view wx:for="{{[['狼盟联队','128'],['光明顶FC','65']]}}" wx:key="{{index}}">
+  <view class="title-home" >
+    <view bindtap="handleTeam" class="content1-home">{{item[0]}}</view>
+    <view class="fance">人气指数:{{item[1]}}</view>
+    <view bindtap="handleTeam2" class="content2-home">点击查看>></view>
+  </view>
+  <view class="sep"></view>
+</view>

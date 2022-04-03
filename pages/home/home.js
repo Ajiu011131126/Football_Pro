@@ -1,69 +1,87 @@
 // pages/home/home.js
-const app = getApp()
-
+const app = App();
 Page({
-  
 
-  /**
-   * 页面的初始数据
-   */
   data: {
-    token: app.globalData.token
+    data:{
+    height:{
+      value:[170],
+      name:'身高（cm)'
+    },
+    weight:{
+      value:[70],
+      name:'体重(kg)'
+    },
+    age: {
+      value:[35],
+      name:'年龄(岁)'
+    },
+    speed:{
+      value:[15],
+      name:'百米（秒)'
+    },
+    useleg:{
+      value:['右脚'],
+      name:'惯用脚'
+    },
+    position:{
+      value:['门将'],
+      name:'场上位置'
+    }
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
-  onLoad: function (options) {
-
+  currentIndex:0,
+  code:''
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
-  onReady: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面显示
-   */
-  onShow: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
-  onHide: function () {
-
-  },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
-  onUnload: function () {
+  handleLeagueGames(){
+    wx.navigateTo({
+      url: '/pages/games/lggame/lggame',
+    })
 
   },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
+  handleNavitoPlayer(){
+    wx.reLaunch({
+      url: '/pages/players/player-info/player-info',
+    })
+  },
+  handleNavitoTeam(){
+    wx.reLaunch({
+      url: '/pages/team/team-total/team-total',
+    })
+  },
+  handleTeam(){
+    wx.navigateTo({
+      url: '/pages/team/team-info/team-info?code=1',
+    })
+  },
+  handleNavi(){
+    wx.navigateTo({
+      url: '/pages/players/fance-message/fance-message',
+    })
+  },
+  handleItemClick(){
+    wx.navigateTo({
+      url: '/pages/players/fance-message/fance-message',
+    })
 
   },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
+  onLoad:function(){
+    wx.login({
+      success (res){
+        if (res.code) {
+          //发起网络请求
+          wx.request({
+            url: 'http://ic.snssdk.com/2/article/v25/stream/',
+            data: {
+              code: res.code
+            }
+          })
+          console.log(res)
+        } else {
+          console.log('登录失败！' + res.errMsg)
+        }
+      }
+    })
 
   }
+  
 })

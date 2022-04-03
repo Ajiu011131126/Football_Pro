@@ -1,0 +1,60 @@
+<!--pages/games/creategames/creategames.wxml-->
+<my-pagetitle title="创建联赛" />
+<my-titletext title="联赛名称" />
+<input class="input" placeholder="请输入需要建立的联赛名称" />
+<view class="backgr-title">球队数量场地设置</view>
+<view class="setCont" >
+  <view class="setItem">球队数量</view>
+  <view class="setItem">
+    <view class="section">
+  
+  <picker bindchange="bindPickerChange1" value="{{index1}}" range="{{array1}}">
+    <view class="picker">
+      {{array1[index1]}}
+    </view>
+  </picker>
+</view>
+  </view>
+</view>
+<view class="setCont" >
+  <view class="setItem">举办地点</view>
+  <view class="setItem">
+    <view class="section">
+  
+  <picker bindchange="bindPickerChange2" value="{{index2}}" range="{{array2}}">
+    <view class="picker">
+      {{array2[index2]}}
+    </view>
+  </picker>
+</view>
+  </view>
+</view>
+<view class="setCont" >
+  <view class="setItem">开赛时间</view>
+  <view class="setItem">
+    <view class="section">
+
+  <picker mode="date" value="{{date1}}" start="2019-09-01" end="2025-09-01" bindchange="bindDateChange1">
+    <view class="picker">
+      {{date1}}
+    </view>
+  </picker>
+</view>
+    
+  </view>
+</view>
+<view class="setCont" >
+  <view class="setItem">报名截止时间</view>
+  <view class="setItem">
+    <view class="section">
+ 
+  <picker mode="date" value="{{date2}}" start="2019-09-01" end="2025-09-01" bindchange="bindDateChange2">
+    <view class="picker">
+    {{date2}}
+    </view>
+  </picker>
+</view>
+  </view>
+</view>
+
+<button bindtap="handleCreate">确定创建</button>

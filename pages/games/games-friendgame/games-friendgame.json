@@ -1,0 +1,31 @@
+{
+  "usingComponents": {},
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "test": "首页",
+        "iconPath": "/images/png/home-off.png",
+        "selectedIconPath": "/images/png/home-on.png"
+      },
+      {
+        "pagePath": "pages/team/team-info/team-info",
+        "test": "球队",
+        "iconPath": "/images/png/teams-off.png",
+        "selectedIconPath": "/images/png/teams-on.png"
+      },
+      {
+        "pagePath": "pages/games/games-list/games-list",
+        "test": "比赛",
+        "iconPath": "/images/png/game-off.jpg",
+        "selectedIconPath": "/images/png/game-on.jpg"
+      },
+      {
+        "pagePath": "pages/players/player-info/player-info",
+        "test": "我",
+        "iconPath": "/images/png/me-off.png",
+        "selectedIconPath": "/images/png/me-on.png"
+      }
+    ]
+  }
+}

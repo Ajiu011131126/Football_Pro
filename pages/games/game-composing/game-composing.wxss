@@ -1,0 +1,24 @@
+/* pages/games/game-composing/game-composing.wxss */
+.container{
+border: aqua;
+border-bottom: 10rpx;
+padding: 10rpx;
+ display: flex;
+}
+.container2{
+  border: aqua;
+  white-space: nowrap;
+
+  }
+.item1{
+  flex:1;
+  
+}
+.item2{
+  flex:2;
+}
+
+.item-image{
+  display: inline-block;
+
+}

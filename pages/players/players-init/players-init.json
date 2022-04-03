@@ -1,0 +1,9 @@
+{
+
+  "usingComponents": {
+    "my-userinfo":"/components/my-userinfo/my-userinfo",
+    "my-titletext":"/components/my-titletext/my-titletext",
+    "my-picker":"/components/my-picker/my-picker",
+    "my-seperation":"/components/my-seperation/my-seperation"
+  }
+}

@@ -1,0 +1,151 @@
+<!--pages/games/games-list/games-list.wxml-->
+<view class="page">
+
+<view class="pagetitle">足球对战平台</view>
+
+</view>
+<my-titletext  title="最近的比赛" />
+<my-seperation />
+<view hidden="{{code!=1?'true':''}}" wx:for="{{games}}" wx:key="{{index}}" >
+<view class="infoList">
+  <view class="infoItem2" style="width: 30%;">
+    <view style="vertical-align: middle;">{{item.name}}</view>
+    <view style="color: red;"> VS</view>
+    <view style="vertical-align: middle;">{{myteamname}}</view>
+  </view>
+<view class="infoItem1" style="width: 40%;">
+  <view>{{item.time}}</view>
+ <view style="height: 50rpx;"></view>
+ <view style="height: 50rpx;text-align: center;font-size: 36rpx;">人数：10/14</view>
+</view>
+<view class="infoItem2" >
+  <view>{{item.add}}</view>
+  <view style="height: 50rpx;"></view>
+  <view style="color:darkorange;height: 50rpx;text-align: end;font-size: 28rpx;">进入报名>></view>
+</view>
+</view>
+<my-seperation />
+</view>
+  <view hidden="{{code!=0?'true':''}}"  class="infoList">最近无比赛</view>
+
+
+<my-titletext bind:titleClick="handleFrendGame" title="友谊赛邀请"/>
+<my-seperation></my-seperation>
+
+<my-titletext bind:titleClick="handleLeague" title="球队联赛"/>
+<my-seperation></my-seperation>
+
+<!--
+<view class="icon-box-ctn">
+  <icon class="icon-box-img" type="info" size="20"></icon>
+  <icon class="icon-box-img" type="warn" size="93" color="#C9C9C9"></icon>
+      <view class="icon-box-desc">在</view>
+      <icon class="icon-box-img" type="success" size="20"></icon>
+      <icon class="icon-small" type="circle" size="23"></icon>
+    </view>
+
+<view class="container">
+  <view class="icon-box">
+    <icon class="icon-box-img" type="success" size="93"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">成功</view>
+      <view class="icon-box-desc">用于表示操作顺利完成</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="info" size="93"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">提示</view>
+      <view class="icon-box-desc">用于表示信息提示；也常用于缺乏条件的操作拦截，提示用户所需信息</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="warn" size="93" color="#C9C9C9"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">普通警告</view>
+      <view class="icon-box-desc">用于表示操作后将引起一定后果的情况；也用于表示由于系统原因而造成的负向结果</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <icon class="icon-box-img" type="warn" size="93"></icon>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">强烈警告</view>
+      <view class="icon-box-desc">用于表示由于用户原因造成的负向结果；也用于表示操作后将引起不可挽回的严重后果的情况</view>
+    </view>
+  </view>
+ 
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="success_no_circle" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">多选控件图标_已选择</view>
+      <view class="icon-box-desc">用于多选控件中，表示已选择该项目</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="circle" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">多选控件图标_未选择</view>
+      <view class="icon-box-desc">用于多选控件中，表示该项目可被选择，但还未选择</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="warn" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">错误提示</view>
+      <view class="icon-box-desc">用于在表单中表示出现错误</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="success" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">单选控件图标_已选择</view>
+      <view class="icon-box-desc">用于单选控件中，表示已选择该项目</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="download" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">下载</view>
+      <view class="icon-box-desc">用于表示可下载</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="info_circle" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">提示</view>
+      <view class="icon-box-desc">用于在表单中表示有信息提示</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="cancel" size="23"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">停止或关闭</view>
+      <view class="icon-box-desc">用于在表单中，表示关闭或停止</view>
+    </view>
+  </view>
+  <view class="icon-box">
+    <view class="icon-small-wrp">
+      <icon class="icon-small" type="search" size="14"></icon>
+    </view>
+    <view class="icon-box-ctn">
+      <view class="icon-box-title">搜索</view>
+      <view class="icon-box-desc">用于搜索控件中，表示可搜索</view>
+    </view>
+  </view>
+
+</view>
+-->

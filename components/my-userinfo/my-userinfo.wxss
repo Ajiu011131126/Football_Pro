@@ -1,0 +1,28 @@
+/* components/my-userinfo/my-userinfo.wxss */
+
+.userinfo{
+  flex:1;
+  align-items: center;
+  padding-left: 20rpx;
+  text-align: left;
+  vertical-align: middle;
+  color: rgb(0, 0, 0);
+  padding-top: 20rpx;
+  width: 120rpx;
+}
+.userin{
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+display: flex;
+
+}
+.avatar{
+  padding-left: 30rpx;
+  width: 140rpx;
+  height: 140rpx;
+}
+
+.userinfotext{
+ 
+  font-size: 30rpx;
+}

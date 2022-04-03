@@ -1,0 +1,34 @@
+<!--pages/games/game-composing/game-composing.wxml-->
+<my-pagetitle title="新建联赛情况查询" />
+<my-seperation />
+<my-titletext title="联赛信息"/>
+<my-seperation />
+<block wx:for="{{league}}" wx:key="{{index}}">
+<view class="container">
+  <view class="item1">
+    <my-titleitem itemvalue="{{item.name}}" />
+  </view>
+  <view class="item2">{{item.value}}</view>
+ 
+</view>
+<my-seperation />
+</block>
+
+
+<my-titletext title="报名情况"/>
+<my-seperation />
+
+<scroll-view class="container2" scroll-x>
+  <block wx:for="{{attendTeam}}" wx:key="{{index}}">
+<view style="background-color: rgb(197, 197, 197);" class="item-image">
+
+  <image bindtap="handleDelete" style="width: 120rpx;height: 120rpx;" mode="aspectFill" src="{{item}}" />
+</view>
+
+</block>
+</scroll-view>
+<view>
+<button>加入联赛（仅领队有权限）</button>
+<button bindtap="handleEdit">修改联赛信息（仅发布者可见）</button>
+<button bindtap="handleQuit" style="color: red;">取消联赛（仅发布者可见）</button>
+</view>

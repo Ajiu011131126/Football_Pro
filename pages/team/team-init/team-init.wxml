@@ -1,0 +1,14 @@
+<my-pagetitle title="球队注册页"/>
+<my-titletext title="队名" />
+<input />
+<my-titletext title="球队介绍" />
+  <input></input>
+<my-titletext title="球队公告" />
+  <input></input>
+<my-titletext title="球员选择" />
+
+<image class="myimg" src="/images/png/addPic.png"/>
+<view class="container">
+<button class="button" size="mini">取消</button>
+<button class="button" bindtap="handleSaveInfo" size="mini" >创建球队</button>
+</view>

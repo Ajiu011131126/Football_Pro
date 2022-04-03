@@ -1,0 +1,11 @@
+/* components/my-picker/my-picker.wxss */
+
+.section{
+  display: flex;
+}
+.section__title{
+  flex : 1 ;
+}
+.picker{
+  color: rgb(117, 117, 117);
+}

@@ -1,0 +1,12 @@
+/* components/my-titleitem/my-titleitem.wxss */
+.backgr-item{
+  font-size: 30rpx;
+  width: 100%;
+  padding: 8rpx 8rpx;
+  color: rgb(53, 53, 53);
+  padding-left: 10rpx;
+  padding-top: 10rpx;
+  padding-bottom: 10rpx;
+  background-color: rgb(253, 255, 241);
+  display: flex;
+}

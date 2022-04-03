@@ -1,24 +1,61 @@
 {
+  "usingComponents": {
+    "my-titletext": "/components/my-titletext/my-titletext",
+    "my-userinfo": "/components/my-userinfo/my-userinfo",
+    "my-titleitem": "/components/my-titleitem/my-titleitem",
+    "my-pagetitle": "/components/my-pagetitle/my-pagetitle",
+    "my-seperation": "/components/my-seperation/my-seperation"
+  },
   "pages": [
     "pages/home/home",
-    "pages/about/about",
-    "pages/my/my"
+    "pages/games/creategames/creategames",
+    "pages/games/lggame/lggame",
+    "pages/games/games-league/games-league",
+    "pages/players/players-init/players-init",
+    "pages/players/player-info/player-info",
+    "pages/team/team-info/team-info",
+    "pages/team/team-init/team-init",
+    "pages/games/games-list/games-list",
+    "pages/games/games-friendgame/games-friendgame",
+    "pages/team/team-total/team-total",
+    "pages/games/leagueDetail/leagueDetail",
+    "pages/games/game-composing/game-composing",
+    "pages/games/friendGameInfo/friendGameInfo",
+    "pages/players/fance-message/fance-message",
+    "pages/team/teamMessage/teamMessage"
   ],
+  "window": {
+    "navigationBarBackgroundColor": "#4b0082",
+    "navigationBarTitleText": "FOOTBALL-ONLINE",
+    "backgroundColor": "#FFF5EE"
+  },
   "tabBar": {
-    "list": [{
-      "pagePath": "pages/home/home",
-      "text": "home"
-    
-    },
-    {
-      "pagePath": "pages/about/about",
-      "text": "关于"
-   
-    },
-    {         
-      
-      "pagePath": "pages/my/my",
-      "text": "我的"
-    }]
-  }
+    "list": [
+      {
+        "pagePath": "pages/home/home",
+        "test": "",
+        "iconPath": "/images/png/home-off.png",
+        "selectedIconPath": "/images/png/home-on.png"
+      },
+      {
+        "pagePath": "pages/team/team-total/team-total",
+        "test": "",
+        "iconPath": "/images/png/teams-off.png",
+        "selectedIconPath": "/images/png/teams-on.png"
+      },
+      {
+        "pagePath": "pages/games/games-list/games-list",
+        "test": "",
+        "iconPath": "/images/png/game-off.jpg",
+        "selectedIconPath": "/images/png/game-on.jpg"
+      },
+      {
+        "pagePath": "pages/players/player-info/player-info",
+        "test": "",
+        "iconPath": "/images/png/me-off.png",
+        "selectedIconPath": "/images/png/me-on.png"
+      }
+    ]
+  },
+  "sitemapLocation": "sitemap.json"
 }

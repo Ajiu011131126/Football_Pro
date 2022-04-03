@@ -1,3 +1,0 @@
-<!--home.wxml-->
-<text>home.wxml</text>
-<view>{{token}}</view>

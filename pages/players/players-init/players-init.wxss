@@ -1,0 +1,44 @@
+/* pages/players/players-init/players-init.wxss */
+.backgr-head{
+  background-color: gainsboro;
+  font-size: 40rpx;
+  margin: 2rpx;
+}
+.backgr-title{
+  font-size: 36rpx;
+  width: 100%;
+  padding: 10rpx 10rpx;
+  color:darkmagenta;
+  background-color: rgb(58, 168, 241);
+}
+.backgr-detail{
+  background-color: rgb(199, 190, 190);
+  margin: 2rpx;
+}
+
+.lines{
+  height: 10rpx;
+  width: 100%;
+  border: darkgray;
+}
+.basic-info{
+  display: flex;
+  padding: 10rpx 10rpx;
+  background-color: rgb(196, 196, 196); 
+ }
+
+ .item{
+   flex: 1;
+ }
+
+ .sep{
+  width:100%;
+  height: 3rpx;
+  background-color: grey;
+  }
+  .button{
+    text-align-last: center;
+  }
+  .playerpage{
+    height: 800rpx;
+  }

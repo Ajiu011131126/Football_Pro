@@ -1,0 +1,6 @@
+<!--components/my-pagetitle/my-pagetitle.wxml-->
+<view class="page">
+  <view bindtap="goBack" class='item'>{{'<返回'}}</view>
+<view class="pagetitle">{{title}}</view>
+<view class="item"></view>
+</view>

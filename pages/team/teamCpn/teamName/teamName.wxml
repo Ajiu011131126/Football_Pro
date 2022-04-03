@@ -1,0 +1,14 @@
+<!--pages/team/teamCpn/teamName/teamName.wxml-->
+<view class="userin">
+  <view class="avatar">
+    <image style="height: 140rpx; width: 140rpx ;" src="/images/png/teams-on.png"/>
+  </view>
+  <view class="userinfo">
+    <view style="height: 30rpx;">
+      {{teamname}}
+    </view>
+    <view style="height: 30rpx;" class="edit">编辑球队信息</view>
+
+  </view>
+
+</view>

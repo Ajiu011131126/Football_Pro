@@ -1,0 +1,15 @@
+/* pages/team/team-init/team-init.wxss */
+.container{
+
+  display: flex;
+}
+
+.button{
+  flex:1;
+  text-align-last: center;
+}
+
+.myimg{
+  height: 120rpx;
+  width: 120rpx;
+}

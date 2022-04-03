@@ -1,6 +1,63 @@
-<!--pages/home/home.wxml-->
-<text class='title'>hello world</text>
-<button size="mini">按钮</button>
-<view>{{token}}</view>
-<navigator url='../../pages/my/my'
-           open-type="redirect">我的</navigator>
+ <my-userinfo title="" name="" />
+<my-titletext bind:titleClick="handleNavitoPlayer" title="我的信息"/>
+<my-seperation />
+
+<my-titleitem bind:itemClick="handleItemClick" itemvalue="粉丝通知信息" />
+
+<my-titletext bind:titleClick="handleNavitoTeam" title="球队信息"/>
+<my-seperation />
+
+<view wx:for="{{['狼盟联队','光明顶FC']}}" wx:key="{{index}}">
+  <view class="title-home" >
+    <view bindtap="handleTeam" class="content1-home">{{item}}</view>
+    <view bindtap="handleTeam" class="content2-home">点击进入>></view>
+  </view>
+  <view class="sep"></view>
+</view>
+<my-titleitem itemvalue="球队通知信息" />
+
+<my-titletext bindtap="handleLeagueGames" title="联赛信息"/>
+<my-seperation />
+
+<my-titleitem itemvalue="比赛通知信息" />
+<my-titletext title="积分情况"/>
+<my-seperation />
+
+<view wx:for="{{['五孔闸联赛','金丰足球联赛','金山文体联赛']}}" wx:key="{{index}}">
+  <view>
+    <my-titleitem  itemvalue="{{item}}" />
+    
+    <view class="league-container" >
+      <view class="league-item">赛程</view>
+      <view class="league-item">积分榜</view>
+      <view class="league-item">射手榜</view>
+    </view>
+      <view class="league-container2">
+        <view class="league-item2">名次</view>
+        <view class="league-item3">队名</view>
+        <view class="league-item2">已赛</view>
+        <view class="league-item2">胜</view>
+        <view class="league-item2">平</view>
+        <view class="league-item2">负</view>
+        <view class="league-item2">积分</view>
+        <view class="league-item2">进球</view>
+        <view class="league-item2">丢球</view>
+        </view>
+        <view>
+        <view class="league-container3" wx:for="{{[['1','光明港竞技','10','5','3','2','18','36','24'],['2','光明顶FC','10','4','4','2','16','24','18'],['3','......','','','','','','','','']]}}" wx:key="{{index}}">
+        <view class="league-item2">{{item[0]}}</view>
+        <view class="league-item3">{{item[1]}}</view>
+        <view class="league-item2">{{item[2]}}</view>
+        <view class="league-item2">{{item[3]}}</view>
+        <view class="league-item2">{{item[4]}}</view>
+        <view class="league-item2">{{item[5]}}</view>
+        <view class="league-item2">{{item[6]}}</view>
+        <view class="league-item2">{{item[7]}}</view>
+        <view class="league-item2">{{item[8]}}</view>
+      </view>
+      </view>
+
+  </view>
+  </view>
+
+<button bindtap="handleNavi" >调试界面</button>

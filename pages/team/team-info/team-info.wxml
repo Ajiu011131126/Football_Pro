@@ -1,0 +1,36 @@
+
+<teamname bindtap="handleEditTeamInfo" />
+<view class="ob" bindtap="handleobserve">点击添加关注</view>
+
+
+<my-titletext title="球队介绍" />
+<my-seperation />
+  <my-titleitem itemvalue="光明顶FC源自光明港竞技，是一支由…………" />
+<my-titletext title="球队公告" />
+<my-seperation />
+  <my-titleitem itemvalue="光明顶FC进队须知：一、二、三" />
+<my-titletext title="球队荣誉" />
+<my-seperation />
+
+<my-titleitem itemvalue="光明顶FC创立以来一共夺得几次五孔闸联赛冠军奖杯" />
+<my-titletext title="球队粉丝" />
+<my-seperation />
+<!--以上部分属于公开可见部分-->
+<view hidden="{{code!='1'?'true':''}}">
+<my-titletext  title="近期赛事" />
+<my-seperation />
+<my-titletext  title="球队人员" />
+<my-seperation />
+<my-titletext  style="color: red;" title="球队消息">new~~</my-titletext>
+<my-seperation />
+ 
+ </view>
+<!--以上部分属于球员可见部分-->
+<view hidden="{{code!='1'?'true':''}}">
+<my-titletext  title="比赛阵型选择" />
+<my-titletext  title="球队消息发布（合并到球队消息里管理）" />
+<my-titletext  title="入队申请-拉新队员（合并到球队人员管理）" />
+</view>
+<!--这几个属于球队管理员可见部分-->
+<button hidden="{{code!='0'?'true':''}}" bindtap="handleEnterTeam">申请加入球队</button>
+<button hidden="{{code!='1'?'true':''}}" bindtap="handleQuitTeam">退出球队</button>

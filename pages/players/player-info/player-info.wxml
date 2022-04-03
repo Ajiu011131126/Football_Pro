@@ -1,0 +1,47 @@
+<my-userinfo title="" name="" />
+<my-titletext bindtap="handleEditPlayerInfo" title="我的信息（点击这里设置）"/>
+<my-seperation />
+<view wx:for="{{data}}" wx:key="{{index}}">
+<view class="infoList">
+  <view  class="infoItem">
+    <test  style="width: 40%;" class="infoItems">{{item.name}}</test>
+    <view  class="infoItems">{{item.value}}</view>
+  </view>
+  
+</view>
+<my-seperation />
+
+</view>
+
+<view style="padding-left: 30rpx;">攻防属性</view>
+<view class="at-con">
+  <view class="at-item">
+
+    <block wx:for="{{score}}" wx:key="index">
+      <view class="it-con">
+      <view class="it-item">{{item.name}}:
+      </view>
+      <view class="it-item">{{item.value}}
+      </view>
+    </view>
+  </block>
+  </view>
+
+  <view class="at-item">
+    <canvas class="item" style="width: 150px; height: 150px;" canvas-id="myCanvas"></canvas>
+  </view>
+</view>
+<my-titletext title="球队信息"/>
+<my-seperation />
+<view></view>
+<my-titletext title="我的荣誉"/>
+<my-seperation />
+<view class="infoList" wx:for="{{honor}}" wx:key="{{index}}">
+ <test  style="width: 40%;">{{item.name}}</test>
+  <view class="infoItem">{{item.value}}</view>
+</view>
+<my-titletext title="我的粉丝"/>
+<my-seperation />
+<view></view>
+
+<button class="bottomBut" size="mini" bindtap="handleEditPlayerInfo">个人信息修改</button>

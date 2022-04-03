@@ -1,0 +1,2 @@
+<!--components/my-score/my-score.wxml-->
+<canvas class="item" style="width: 150px; height: 150px;" canvas-id="myCanvas"></canvas>

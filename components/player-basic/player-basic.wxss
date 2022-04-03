@@ -1,0 +1,82 @@
+/* components/player-basic/player-basic.wxss */
+.title{
+ font-size: 36rpx;
+ display: inline-block;
+}
+
+.v-stru{
+  height: 100%;
+  font-size: 30rpx;
+ margin: 2rpx;
+ background-color: rgb(177, 177, 177);
+ color: ghostwhite;
+}
+
+.item{
+  width: 30%;
+  margin: 4rpx;
+  background-color: rgb(104, 104, 104);
+  white-space: nowrap ;
+}
+
+.status1{
+  width: 10%;
+  display: inline-block;
+  margin: 2rpx;
+  text-align: center;
+}
+
+.status2{
+  width: 100%;
+  display: inline-block;
+  margin: 1rpx;
+  background-color: rgb(199, 199, 199);
+}
+
+.input-1{
+border: rgb(253, 253, 253);
+height: 60rpx;
+width: 95%;
+background-color: white;
+}
+.basic-info2{
+
+  background-color: rgb(243, 229, 229);
+}
+
+.basic-info{
+ display: flex;
+ padding: 10rpx 10rpx;
+ background-color: rgb(196, 196, 196); 
+}
+
+.basic-pro{
+flex:1;
+text-align: right;
+vertical-align: middle;
+padding-top: 8rpx;
+padding-right: 25rpx;
+font-size: 30rpx;
+}
+.basic-input{
+  flex:4;
+}
+
+.sub-title{
+  size: 20rpx;
+
+}
+
+.button{
+  display: flex;
+  align-content: center;
+}
+
+.button-num{
+  flex:1;
+}
+
+.button-blank{
+  flex:4;
+
+}

@@ -1,0 +1,60 @@
+<!--pages/games/games-friendgame/games-friendgame.wxml-->
+<my-pagetitle title="友谊赛邀请" />
+<my-titletext  title="邀约对手" />
+<view class="search-container">
+<icon size="20" type="search"></icon>
+<input style="width: 40%;" placeholder-class="search" placeholder="请输入队名" ></input>
+<text>当前选择：</text>
+<view class="search">{{friendTeam}}</view>
+</view>
+<my-titletext title="选择日期时间" />
+
+<view class="section">
+  <picker mode="date" value="{{date}}" start="2022-03-29" end="2023-01-01" bindchange="bindDateChange">
+    <view class="picker">
+    {{date}}
+    </view>
+  </picker>
+    <view style="width: 10%;"></view>
+  <picker mode="time" value="{{time}}" start="09:01" end="21:01" bindchange="bindTimeChange">
+    <view class="picker">
+      {{time}}
+    </view>
+  </picker>
+
+</view>
+<my-titletext title="选择场地位置" />
+<view class="section">
+
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{gamesadd}}">
+  <view class="picker">
+ {{gamesadd[index]}}
+  </view>
+</picker>
+</view>
+
+<my-titletext title="比赛模式" />
+
+<my-titletext title="比赛时间" />
+
+<my-titletext title="球衣颜色" />
+<view class="section">
+
+  <picker bindchange="bindPickerChange" value="{{index}}" range="{{clothescolor}}">
+    <view class="picker">
+   {{clothescolor[index]}}
+    </view>
+  </picker>
+</view>
+
+<my-titletext title="我方人数限制" />
+<view class="section">
+
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{number}}">
+  <view class="picker">
+ {{number[index]}}
+  </view>
+</picker>
+</view>
+
+<button bindtap="handleSent" style="background-color: khaki;">发送邀请</button>

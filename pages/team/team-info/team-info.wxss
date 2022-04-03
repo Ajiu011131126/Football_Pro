@@ -1,0 +1,7 @@
+/* pages/team/team-info/team-info.wxss */
+.ob{
+  font-size: 28rpx;
+  text-align: right;
+  padding-right: 20rpx;
+  color: red;
+}

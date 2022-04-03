@@ -1,0 +1,17 @@
+<!--components/my-picker/my-picker.wxml-->
+<picker bindchange="bindPickerChange" index="{{value}}" range="{{array}}">
+    <view class="picker">
+      {{name}}：{{array[index]}}
+    </view>
+  </picker>
+
+<!--
+  <view class="section">
+
+<picker bindchange="bindPickerChange" value="{{index}}" range="{{number}}">
+  <view class="picker">
+ {{number[index]}}
+  </view>
+</picker>
+</view>
+--->

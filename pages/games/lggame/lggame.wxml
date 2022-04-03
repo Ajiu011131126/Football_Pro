@@ -1,0 +1,28 @@
+<!--pages/games/lggame/lggame.wxml-->
+<my-pagetitle title="联赛对战空间" />
+<my-seperation />
+<my-titletext title="加入一个联赛" />
+<my-seperation />
+
+<!---以下是通过数据库联赛资料自动输出内容，wx-for，idex，item显示-->
+<view wx:for="{{[['五孔闸联赛','已开赛'],['仓丁联赛','已开赛']]}}" wx:key="{{index}}">
+  <view class="title">
+    <view class="content1">{{item[0]}}</view>
+    <view class="content2">{{item[1]}}</view>
+    <view class="content3" bindtap="handleEnterLeaguegames">点击进入>></view>
+  </view>
+  
+  <view class="sep"></view>
+  
+</view>
+<view class="title">
+    <view class="content1">金山文体</view>
+    <view class="content2">正在组建</view>
+    <view class="content3" bindtap="handleEnterLeaguegames2">点击进入>></view>
+  </view>
+<my-titletext title="建立一个联赛（仅领队有权限）" bindtap="handleCreateGame"/>
+<my-seperation />
+
+<my-titletext bindtap="handleCupGame" title="杯赛赛事" />
+<my-seperation />
+

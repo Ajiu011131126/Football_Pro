@@ -1,0 +1,40 @@
+/* pages/games/games-list/games-list.wxss */
+.active{
+ display: flex;
+}
+.deactive{
+display: none;
+}
+.infoList1{
+  font-size: 36rpx;
+  flex:2
+}
+.infoList2{
+  font-size: 36rpx;
+  flex:1
+}
+
+.infoItem1{
+  padding-right: 20rpx;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  text-align: center;
+  vertical-align: middle;
+}
+.infoItem2{
+  padding-right: 20rpx;
+  padding-top: 16rpx;
+  padding-bottom: 16rpx;
+  text-align: center;
+  vertical-align: middle;
+
+}
+.pagetitle{
+  flex:6;
+  font-size: 60rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  align-self: center;
+  text-align-last: center;
+  background-color: seashell;
+}

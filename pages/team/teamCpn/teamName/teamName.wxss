@@ -1,0 +1,32 @@
+/* pages/team/teamCpn/teamName/teamName.wxss */
+.userinfo{
+  flex:1;
+  align-items: center;
+  padding-left: 40rpx;
+  text-align: left;
+  vertical-align: middle;
+  color: rgb(0, 0, 0);
+  padding-top: 20rpx;
+  width: 120rpx;
+}
+.userin{
+
+  padding-bottom: 20rpx;
+  padding-top: 20rpx;
+display: flex;
+
+}
+.avatar{
+  padding-left: 30rpx;
+  width: 120rpx;
+  height: 120rpx;
+}
+
+.userinfotext{
+  text-align-last: right;
+  font-size: 30rpx;
+}
+.edit{
+  padding-top: 30rpx;
+  font-size: 24rpx;
+}

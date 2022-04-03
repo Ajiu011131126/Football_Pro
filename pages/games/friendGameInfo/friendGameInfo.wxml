@@ -1,0 +1,53 @@
+<!--pages/games/friendGameInfo/friendGameInfo.wxml-->
+<my-pagetitle title="友谊赛邀请函" />
+<my-titletext  title="邀约对手" />
+<view class="search-container">
+
+<text>邀请函发出方：</text>
+<view class="search">{{friendTeam}}</view>
+</view>
+<my-titletext title="日期时间" />
+
+<view class="section">
+
+    <view class="picker">
+    {{date}}
+    </view>
+ 
+    <view style="width: 10%;"></view>
+ 
+    <view class="picker">
+      {{time}}
+    </view>
+
+
+</view>
+<my-titletext title="场地位置" />
+<view class="section">
+  <view class="picker">
+ {{gamesadd[index]}}
+  </view>
+</view>
+
+<my-titletext title="比赛模式" />
+
+<my-titletext title="比赛时间" />
+
+<my-titletext title="球衣颜色" />
+<view class="section">
+    <view class="picker">
+   {{clothescolor[index]}}
+    </view>
+
+</view>
+
+<my-titletext title="我方人数限制" />
+<view class="section">
+
+  <view class="picker">
+ {{number[index]}}
+  </view>
+
+</view>
+<button bindtap="handleReturnNo" style="background-color: khaki;">拒绝邀请</button>
+<button bindtap="handleReturnYes" style="background-color: khaki;">同意邀请</button>

@@ -1,0 +1,17 @@
+/* pages/team/team-total/team-total.wxss */
+.pagetitle{
+  flex:6;
+  font-size: 60rpx;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+  align-self: center;
+  text-align-last: center;
+  background-color: seashell;
+}
+.fance{
+  padding-top: 20rpx;
+  font-size: 30rpx;
+  color: red;
+
+
+}

@@ -1,0 +1,35 @@
+<!--pages/players/players-init/players-init.wxml-->
+<my-pagetitle title="球员注册页" />
+
+<view class="playerpage">
+  <my-titletext title="基础信息"/>
+  <my-seperation></my-seperation>
+  <my-picker capture-bind:longpress="bindDataChange" name="{{playerInfo.heightArray.name}}" array="{{playerInfo.heightArray.data}}" index="{{playerInfo.heightArray.index}}"/>
+  <my-seperation></my-seperation>
+  <my-picker name="{{playerInfo.weightArray.name}}" array="{{playerInfo.weightArray.data}}" index="{{playerInfo.weightArray.index}}"/>
+  <my-seperation></my-seperation>
+  <my-picker name="{{playerInfo.age.name}}" array="{{playerInfo.age.data}}" index="{{playerInfo.age.index}}"/>
+  <my-seperation></my-seperation>
+  <my-picker name="{{playerInfo.speedOneHundred.name}}" array="{{playerInfo.speedOneHundred.data}}" index="{{playerInfo.speedOneHundred.index}}"/>
+  <my-titletext title="其他信息" />
+  <my-seperation></my-seperation>
+  <my-picker name="{{playerInfo.leg.name}}" array="{{playerInfo.leg.data}}" index="{{playerInfo.leg.index}}"/>
+  <my-seperation></my-seperation>
+  <my-picker name="{{playerInfo.position.name}}" array="{{playerInfo.position.data}}" index="{{playerInfo.position.index}}"/>
+  <my-seperation></my-seperation>
+</view>
+
+<view class="button">
+  <button class="button"
+          bindtap="handleQuit" 
+          size="mini">
+          取消
+  </button>
+  <button class="button"
+          bindtap="handleSaveInfo" 
+          size="mini">
+          点击保存
+  </button>
+</view>
+
+

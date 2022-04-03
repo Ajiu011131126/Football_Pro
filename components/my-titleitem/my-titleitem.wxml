@@ -1,0 +1,4 @@
+<!--components/my-titleitem/my-titleitem.wxml-->
+<view bindtap="handleitemClick" class='backgr-item'>
+{{itemvalue}}
+</view>

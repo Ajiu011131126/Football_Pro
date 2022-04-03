@@ -1,0 +1,21 @@
+<!--pages/players/fance-message/fance-message.wxml-->
+<my-pagetitle title="粉丝留言" />
+<my-titletext title="查看留言" />
+<my-seperation />
+<my-titleitem itemvalue="留言人：" />
+<my-seperation />
+<my-titleitem itemvalue="留言主题：" />
+<my-seperation />
+<my-titleitem itemvalue="留言内容：" />
+<view style="height: 200rpx;"></view>
+<my-seperation />
+
+<my-titletext title="回复留言" />
+<my-seperation />
+<my-titleitem itemvalue="留言主题：" />
+<my-seperation />
+<my-titleitem itemvalue="留言内容：" />
+<view style="height: 200rpx;"></view>
+<my-seperation />
+
+<button bindtap="handleSentMessage">发送留言</button>

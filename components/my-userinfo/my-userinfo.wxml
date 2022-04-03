@@ -1,0 +1,15 @@
+<!--components/my-userinfo/my-userinfo.wxml-->
+<view class="userin">
+  <view class="avatar">
+    <open-data  type="userAvatarUrl"></open-data>
+  </view>
+  <view class="userinfo">
+ 
+    <open-data type="userNickName"></open-data>
+    <view style="height: 30rpx;">
+    
+  </view>
+  <test class="userinfotext">球场外号</test>
+  </view>
+
+</view>

@@ -1,0 +1,3 @@
+<view class='backgr-title' bindtap="titleClick">
+  {{title}}
+</view>

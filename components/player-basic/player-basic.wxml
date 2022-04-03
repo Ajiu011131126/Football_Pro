@@ -1,0 +1,22 @@
+<!--components/player-basic/player-basic.wxml-->
+<block  wx:for="{{stylename}}" wx:key="{{index}}">
+<view class='basic-info {{index%counter==0?"basic-info2":""}}' >
+  <test class='basic-pro sub-title'>{{item}}</test>
+  <input bindtap="handleinput" maxlength="3" type="number" class="basic-input input-1" />
+  <slot name="slot1"></slot>
+  <slot name="slot2"></slot>
+  
+</view>
+<slot name="slot3"></slot>
+</block>
+
+
+
+<view class="button">
+<view class="button-blank"></view>
+<button size="mini" bindtap="dataSub" wx:if="{{minusDisplay}}">-</button>
+<view class="button-num">{{counter}}</view>
+<button size="mini" bindtap="dataAdd">+</button>
+<view class="button-blank"></view>
+</view>
+
