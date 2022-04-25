@@ -22,7 +22,10 @@
       nickname:'username',
       useravatarUrl:'',
     },
-    onLaunch: function(res){
+    onLaunch: function(){
+      wx.cloud.init({
+        env:"cloud1-0g0lpkjq0971a198"
+      }),
       wx.getUserInfo({
         success:(res)=>{
           const nickname = res.userInfo.nickName;

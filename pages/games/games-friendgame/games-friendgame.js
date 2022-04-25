@@ -10,8 +10,8 @@ Page({
     time: '12:00',
     index:0,
     gamesadd:['五孔闸','魁歧革命公园','魁浦生态公园','光明港公园','万科金融港','金凤体育公园','超德中学','师大后场','金山文体'],
-    gamestyle:['5V5','7V7','8V8','9V9','11V11'],
-    gametime:['20分钟3节','30分钟2节','30分钟3节','45分钟2节','不论输赢，战到天昏地暗','自定义'],
+    gamesmode:['5V5','7V7','8V8','9V9','11V11'],
+    gamestimeSet:['20分钟3节','30分钟2节','30分钟3节','45分钟2节','不论输赢，战到天昏地暗','自定义'],
     clothescolor:['白','红','黄','蓝','绿','橙','黑','粉','青'],
     number:['5','6','7','8','9','10','11','12','13','14','15','16','17','18','18+']
   },
@@ -76,7 +76,19 @@ Page({
       time: e.detail.value
     })
   },
-  bindPickerChange: function(e) {
+  bindPickerChange1: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  bindPickerChange2: function(e) {
+    console.log('picker发送选择改变，携带值为', e.detail.value)
+    this.setData({
+      index: e.detail.value
+    })
+  },
+  bindPickerChange3: function(e) {
     console.log('picker发送选择改变，携带值为', e.detail.value)
     this.setData({
       index: e.detail.value

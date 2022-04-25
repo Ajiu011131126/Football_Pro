@@ -1,0 +1,64 @@
+<!--pages/games/solitaire-list/solitaire-list.wxml-->
+<my-pagetitle title="比赛接龙明细页" />
+<my-seperation />
+<scroll-view class="container-small" scroll-y>
+  <block wx:for="{{gameDetail}}" wx:key="{{index}}">
+    <view class="container">
+    <view class="item">
+      <my-titleitem itemvalue="{{item.name}}" />
+    </view>
+    <view class="item">{{item.value}}</view>
+    </view>
+    
+
+  </block>
+</scroll-view>
+<my-seperation />
+<view class="container-out">
+  <view class="container">
+
+    <view class="item1">
+      球衣颜色
+    </view>
+    <view class="item1">白</view>
+ 
+  </view>
+  <view class="container">
+    <view class="item1">
+     人数限制
+    </view>
+    <view class="item1">15</view>
+  </view>
+</view>
+<my-titletext title="阵型选择" />
+<my-seperation />
+<view style="padding-left: 20rpx;">3-4-1</view>
+<my-seperation />
+<view class="container-out">
+    <view class="item1">位置</view>
+    <view class="item1">可报人数</view>
+    <view class="item1">已报人数</view>
+    <view class="item1">单击勾选</view>
+  </view>
+<block wx:for="{{battleType}}" wx:key="{{index}}">
+  <view class="container-out">
+    <view class="item1">{{item.position}}</view>
+    <view class="item1">{{item.playernum}}</view>
+    <view class="item1">0</view>
+    <view  class="item1">
+      <icon bindtap="handleSelectIcon" class="icon-small" type="circle" size="23"></icon>
+      <icon class="icon-small" type="success" size="23"></icon>
+
+    </view>
+  </view>
+</block>
+<!--上面有点错误，需要调整语句-->
+<button>确定报名</button>
+<button>取消接龙</button>
+
+      <icon class="icon-small" type="success" size="23"></icon>
+ 
+      <icon class="icon-small" type="success_no_circle" size="23"></icon>
+
+      <icon class="icon-small" type="circle" size="23"></icon>
+  

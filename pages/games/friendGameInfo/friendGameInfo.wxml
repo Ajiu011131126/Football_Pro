@@ -41,7 +41,7 @@
 
 </view>
 
-<my-titletext title="我方人数限制" />
+<my-titletext title="每队人数" />
 <view class="section">
 
   <view class="picker">

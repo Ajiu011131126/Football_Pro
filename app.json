@@ -7,6 +7,7 @@
     "my-seperation": "/components/my-seperation/my-seperation"
   },
   "pages": [
+    "pages/index/index",
     "pages/home/home",
     "pages/games/creategames/creategames",
     "pages/games/lggame/lggame",
@@ -22,7 +23,12 @@
     "pages/games/game-composing/game-composing",
     "pages/games/friendGameInfo/friendGameInfo",
     "pages/players/fance-message/fance-message",
-    "pages/team/teamMessage/teamMessage"
+    "pages/team/teamMessage/teamMessage",
+    "pages/games/gamesGoingon/gamesGoingon",
+    "pages/games/solitaire-list/solitaire-list",
+    "pages/games/battleSet/battleSet",
+    "pages/games/gameResult/gameResult",
+    "pages/games/gameScore/gameScore"
   ],
   "window": {
     "navigationBarBackgroundColor": "#4b0082",

@@ -1,8 +1,11 @@
 // pages/home/home.js
 const app = App();
+const db = wx.cloud.database().collection("list")
+let id = 0;
 Page({
 
   data: {
+   
     data:{
     height:{
       value:[170],
@@ -55,7 +58,7 @@ Page({
   },
   handleNavi(){
     wx.navigateTo({
-      url: '/pages/players/fance-message/fance-message',
+      url: '/pages/games/gameScore/gameScore',
     })
   },
   handleItemClick(){

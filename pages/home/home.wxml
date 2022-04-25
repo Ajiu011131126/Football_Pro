@@ -43,8 +43,8 @@
         <view class="league-item2">进球</view>
         <view class="league-item2">丢球</view>
         </view>
-        <view>
-        <view class="league-container3" wx:for="{{[['1','光明港竞技','10','5','3','2','18','36','24'],['2','光明顶FC','10','4','4','2','16','24','18'],['3','......','','','','','','','','']]}}" wx:key="{{index}}">
+        <scroll-view class="container-outside" scroll-y>
+        <view class="league-container3" wx:for="{{[['1','光明港竞技','10','5','3','2','18','36','24'],['2','光明顶FC','10','4','4','2','16','24','18'],['3','......','','','','','','','',''],['4','光明港竞技','10','5','3','2','18','36','24'],['5','光明顶FC','10','4','4','2','16','24','18'],['6','......','','','','','','','',''],['7','光明港竞技','10','5','3','2','18','36','24'],['8','光明顶FC','10','4','4','2','16','24','18'],['9','......','','','','','','','','']]}}" wx:key="{{index}}">
         <view class="league-item2">{{item[0]}}</view>
         <view class="league-item3">{{item[1]}}</view>
         <view class="league-item2">{{item[2]}}</view>
@@ -55,9 +55,11 @@
         <view class="league-item2">{{item[7]}}</view>
         <view class="league-item2">{{item[8]}}</view>
       </view>
-      </view>
+      </scroll-view>
 
   </view>
   </view>
 
 <button bindtap="handleNavi" >调试界面</button>
+<input bindinput="valueInput" placeholder="请输入要删除的数据ID"></input>
+<button bindtap="removeData">删除数据</button>

@@ -1,0 +1,90 @@
+<!--pages/games/gameScore/gameScore.wxml-->
+<my-pagetitle title="赛后数据汇总评分" />
+<my-seperation />
+<my-titletext title="个人数据填写" />
+<scroll-view scroll-y
+             class="out">
+<view class="container">
+  <view class="item">
+    <my-titleitem itemvalue="进球数" />
+  </view>
+  <view class="item">
+    <input style="background-color: rgb(248, 255, 189);"></input>
+  </view>
+</view>
+<view class="container">
+  <view class="item">
+    <my-titleitem itemvalue="助攻数" />
+  </view>
+  <view class="item">
+    <input style="background-color: rgb(248, 255, 189);"></input>
+  </view>
+</view>
+<view class="container">
+  <view class="item">
+    <my-titleitem itemvalue="黄牌数" />
+  </view>
+  <view class="item">
+    <input style="background-color: rgb(248, 255, 189);"></input>
+  </view>
+</view>
+<view class="container">
+  <view class="item">
+    <my-titleitem itemvalue="红牌数" />
+  </view>
+  <view class="item">
+    <input style="background-color: rgb(248, 255, 189);"></input>
+  </view>
+</view>
+<view class="container">
+  <view class="item">
+    <my-titleitem itemvalue="抢断数" />
+  </view>
+  <view class="item">
+    <input style="background-color: rgb(248, 255, 189);"></input>
+  </view>
+</view>
+<view class="container">
+  <view class="item">
+    <my-titleitem  itemvalue="扑救数" />
+  </view>
+  <view class="item">
+    <input style="background-color: rgb(248, 255, 189);"></input>
+  </view>
+ </view>
+
+</scroll-view>
+<my-seperation />
+<my-titletext title="队友评分区" />
+<view class="container">
+  <view class="item">
+    <view>请选择本次比赛表现优异的对员（可选自己，最多3个）</view>
+    <scroll-view class="out"
+                 scroll-y>
+                 <block wx:for="{{gameResult}}" 
+                        wx:key="{{index}}">
+                  <view class="container">
+                      <view class="item">{{item.name}}</view>
+                      <view class="item"><icon class="icon-small" type="circle" size="23"></icon></view>
+                      <view class="item"><icon class="icon-small" type="success_no_circle" size="23"></icon></view>
+                  </view>
+                </block>
+    </scroll-view>
+  
+  </view>
+  <view class="item">
+    <view>请选择本次比赛表现不佳的对员（选1个）</view>
+    <scroll-view class="out"
+                 scroll-y>
+                 <block wx:for="{{gameResult}}" 
+                        wx:key="{{index}}">
+                  <view class="container">
+                      <view class="item">{{item.name}}</view>
+                      <view class="item"><icon class="icon-small" type="circle" size="23"></icon></view>
+                      <view class="item"><icon class="icon-small" type="success" size="23"></icon></view>
+                  </view>
+                </block>
+    </scroll-view>
+  </view>
+</view>
+<button>确定提交</button>

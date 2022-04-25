@@ -26,7 +26,7 @@
 <my-titletext title="选择场地位置" />
 <view class="section">
 
-<picker bindchange="bindPickerChange" value="{{index}}" range="{{gamesadd}}">
+<picker bindchange="bindPickerChange1" value="{{index}}" range="{{gamesadd}}">
   <view class="picker">
  {{gamesadd[index]}}
   </view>
@@ -34,9 +34,23 @@
 </view>
 
 <my-titletext title="比赛模式" />
+<view class="section">
 
+<picker bindchange="bindPickerChange2" value="{{index}}" range="{{gamesmode}}">
+  <view class="picker">
+ {{gamesmode[index]}}
+  </view>
+</picker>
+</view>
 <my-titletext title="比赛时间" />
+<view class="section">
 
+<picker bindchange="bindPickerChange3" value="{{index}}" range="{{gamestimeSet}}">
+  <view class="picker">
+ {{gamestimeSet[index]}}
+  </view>
+</picker>
+</view>
 <my-titletext title="球衣颜色" />
 <view class="section">
 
@@ -47,7 +61,7 @@
   </picker>
 </view>
 
-<my-titletext title="我方人数限制" />
+<my-titletext title="每队人数" />
 <view class="section">
 
 <picker bindchange="bindPickerChange" value="{{index}}" range="{{number}}">

@@ -1,1 +1,18 @@
 /* pages/games/leagueDetail/leagueDetail.wxss */
+.container{
+
+  display: flex;
+}
+.item{
+  flex:1;
+}
+.item2{
+  flex:1;
+  font-size: 28rpx;
+  text-align: right;
+  padding-right: 26rpx;
+  color:darkgoldenrod ;
+}
+.outsidecont{
+  height: 360rpx;
+}

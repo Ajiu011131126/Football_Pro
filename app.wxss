@@ -106,6 +106,9 @@ display: flex;
   padding-top: 5rpx;
   padding-bottom: 5rpx;
 }
+.container-outside{
+  height: 300rpx;
+}
 .league-item2{
   flex:1;
   font-size: 28rpx;

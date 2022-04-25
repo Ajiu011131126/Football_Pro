@@ -1,0 +1,21 @@
+/* pages/games/gameScore/gameScore.wxss */
+.container{
+  padding: 20rpx;
+    display: flex;
+
+  }
+  .item{
+    flex: 1;
+    padding-left: 10rpx;
+    font-size: 28rpx;
+    text-align: center;
+  }
+  .item1{
+    flex: 2;
+    padding-left: 10rpx;
+    font-size: 28rpx;
+    text-align: center;
+  }
+  .out{
+    height:  360rpx;
+  }

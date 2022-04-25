@@ -6,15 +6,20 @@
 }
 .search-container{
   display: flex;
+
 }
 
 .section{
   display: flex;
+  text-align: center;
+  padding-left: 40%;
 }
 .section__title{
   flex : 1 ;
+  text-align: center;
 }
 .picker{
   color: rgb(117, 117, 117);
   border: -5rpx;
+  text-align: center;
 }

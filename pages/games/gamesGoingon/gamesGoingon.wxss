@@ -1,0 +1,9 @@
+/* pages/games/gamesGoingon/gamesGoingon.wxss */
+.container{
+  display: flex;
+}
+
+.item{
+  padding-left: 30rpx;
+  flex:1;
+}

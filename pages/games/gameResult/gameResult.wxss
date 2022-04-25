@@ -1,0 +1,17 @@
+/* pages/games/gameResult/gameResult.wxss */
+.container{
+padding: 20rpx;
+  display: flex;
+}
+.item{
+  flex: 1;
+  padding-left: 10rpx;
+  font-size: 28rpx;
+  text-align: center;
+}
+.item1{
+  flex: 2;
+  padding-left: 10rpx;
+  font-size: 28rpx;
+  text-align: center;
+}

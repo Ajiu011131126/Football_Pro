@@ -1,0 +1,29 @@
+<!--pages/games/gameResult/gameResult.wxml-->
+<my-pagetitle title="比赛结果汇总"/>
+<my-seperation />
+<my-titletext title="我方进球数" />
+<input></input>
+<my-titletext title="我方失球数" />
+<input></input>
+<my-titletext title="球员明细汇总" />
+<view class="container">
+  <text class="item1">球员</text>
+  <text class="item">进球</text>
+  <text class="item">助攻</text>
+  <text class="item">黄牌</text>
+  <text class="item">红牌</text>
+  <text class="item">抢断</text>
+  <text class="item">扑救</text>
+</view>
+<block wx:for="{{gameResult}}" wx:key="{{index}}">
+  <view class="container">
+    <text class="item1">{{item.name}}</text>
+    <text class="item">{{item.score}}</text>
+    <text class="item">{{item.assist}}</text>
+    <text class="item">{{item.yellowcard}}</text>
+    <text class="item">{{item.redcard}}</text>
+    <text class="item">{{item.destroy}}</text>
+    <text class="item">{{item.goodSave}}</text>
+  </view>
+</block>
+<button>确认提交比赛结果</button>

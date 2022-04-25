@@ -1,0 +1,6 @@
+<!--pages/games/battleSet/battleSet.wxml-->
+<text>pages/games/battleSet/battleSet.wxml</text>
+{{item.name}}
+
+
+

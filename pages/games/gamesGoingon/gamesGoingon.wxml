@@ -1,0 +1,17 @@
+<!--pages/games/gamesGoingon/gamesGoingon.wxml-->
+<my-pagetitle title="比赛详情" />
+<my-seperation />
+<view>
+  <block wx:for="{{gameDetail}}" wx:key="{{index}}">
+    <view class="container">
+    <view class="item">
+      <my-titleitem itemvalue="{{item.name}}" />
+    </view>
+    <view class="item">{{item.value}}</view>
+    </view>
+    
+
+  </block>
+</view>
+<button>我要接龙参加</button>
+<button>设置修改接龙阵型（仅针对管理员）</button>

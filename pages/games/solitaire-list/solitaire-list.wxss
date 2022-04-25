@@ -1,0 +1,25 @@
+/* pages/games/solitaire-list/solitaire-list.wxss */
+.container-out{
+  display: flex;
+  padding-top: 20rpx;
+  padding-bottom: 20rpx;
+}
+.container-small{
+  height: 160rpx;
+  display: flex;
+}
+.container{
+  flex:1;
+  display: flex;
+
+}
+
+.item{
+  padding-left: 30rpx;
+  flex:1;
+}
+.item1{
+  text-align: center;
+  flex:1;
+  font-size: 28rpx;
+}

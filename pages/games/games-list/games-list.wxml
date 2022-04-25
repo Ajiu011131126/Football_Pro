@@ -21,7 +21,7 @@
 <view class="infoItem2" >
   <view>{{item.add}}</view>
   <view style="height: 50rpx;"></view>
-  <view style="color:darkorange;height: 50rpx;text-align: end;font-size: 28rpx;">进入报名>></view>
+  <view bindtap="handleSolitaire" style="color:darkorange;height: 50rpx;text-align: end;font-size: 28rpx;">进入报名>></view>
 </view>
 </view>
 <my-seperation />

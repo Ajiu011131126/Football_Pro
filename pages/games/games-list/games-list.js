@@ -37,6 +37,12 @@ Page({
       }
   },
 
+  handleSolitaire(){
+    wx.navigateTo({
+      url: '/pages/games/solitaire-list/solitaire-list',
+    })
+
+  },
   
   onLoad:  (options)=> {
    /* console.log(options)

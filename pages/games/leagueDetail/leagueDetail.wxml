@@ -1,2 +1,54 @@
 <!--pages/games/leagueDetail/leagueDetail.wxml-->
 <my-pagetitle title="联赛详细信息" />
+
+<my-seperation />
+<my-titletext title="联赛名称" />
+<my-seperation />
+<my-titleitem itemvalue="五孔闸联赛" />
+<my-titletext title="联赛举办地点" />
+<my-seperation />
+<my-titleitem itemvalue="五孔闸" />
+<my-titletext bind:titleClick="handleTitleClick" title="下轮比赛详情" />
+<my-seperation />
+<my-titletext title="参赛队伍" />
+<my-seperation />
+<scroll-view class="outsidecont" scroll-y>
+  <block wx:for="{{leagueTeams}}" wx:key="{{item}}">
+  <view class="container">
+    <view class="item">{{item.name}}</view>
+    <view class="item">第{{item.ranking}}名</view>
+    <view class="item2">球队介绍>></view>
+  </view>
+ </block>
+ </scroll-view>
+ <my-titletext title="赛程积分表射手榜" />
+<my-seperation />
+<view class="league-container" >
+      <view class="league-item">赛程</view>
+      <view class="league-item">积分榜</view>
+      <view class="league-item">射手榜</view>
+    </view>
+      <view class="league-container2">
+        <view class="league-item2">名次</view>
+        <view class="league-item3">队名</view>
+        <view class="league-item2">已赛</view>
+        <view class="league-item2">胜</view>
+        <view class="league-item2">平</view>
+        <view class="league-item2">负</view>
+        <view class="league-item2">积分</view>
+        <view class="league-item2">进球</view>
+        <view class="league-item2">丢球</view>
+        </view>
+        <scroll-view class="container-outside" scroll-y>
+        <view class="league-container3" wx:for="{{[['1','光明港竞技','10','5','3','2','18','36','24'],['2','光明顶FC','10','4','4','2','16','24','18'],['3','......','','','','','','','',''],['4','光明港竞技','10','5','3','2','18','36','24'],['5','光明顶FC','10','4','4','2','16','24','18'],['6','......','','','','','','','',''],['7','光明港竞技','10','5','3','2','18','36','24'],['8','光明顶FC','10','4','4','2','16','24','18'],['9','......','','','','','','','','']]}}" wx:key="{{index}}">
+        <view class="league-item2">{{item[0]}}</view>
+        <view class="league-item3">{{item[1]}}</view>
+        <view class="league-item2">{{item[2]}}</view>
+        <view class="league-item2">{{item[3]}}</view>
+        <view class="league-item2">{{item[4]}}</view>
+        <view class="league-item2">{{item[5]}}</view>
+        <view class="league-item2">{{item[6]}}</view>
+        <view class="league-item2">{{item[7]}}</view>
+        <view class="league-item2">{{item[8]}}</view>
+      </view>
+      </scroll-view>
